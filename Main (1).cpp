@@ -2,17 +2,28 @@
 #include<stdio.h>
 int main()
 {
-    float a=0.1;
-    float b = 0.3;
-    float result = a+b;
-    if(result == 0.4)
+    for(int i=1;i<=4;i++)
     {
-        printf("yes");
-        
+        for(int j=1;j<=4-i;j++)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=2*i-1;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
-    else
+    for(int i=3;i>=1;i--)
     {
-        printf("no");
+        for(int j=1;j<=4-i;j++)
+        {
+            printf(" ");
+        }
+        for(int j=1;j<=2*i-1;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
-    printf("\n %f",result);
 }
